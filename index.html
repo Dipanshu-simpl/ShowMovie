@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleLogin.css" />
+     <script src="login.js">
+  
+</script>
+<script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+
+    <title>showmymovie.com</title>
+  </head>
+  <body>
+   <h1> SHOWMYMOVIE</h1>
+    <div class="container">
+      <h1>Please Login</h1>
+      <form method="post">
+        <div class="form-control">
+          <input type="text" placeholder="Email" name="username" id="username" required />
+          
+        </div>
+        <div class="form-control">
+          <input type="password" placeholder="Password" name="password" id="password" required />
+          
+        </div>
+        <input type="button" value="Login" class="btn" onclick="validate()"/>
+        <p class="text">Don't have an account? <a href="signup.html">Register</a></p>
+      </form>
+    </div>
+   
+   
+  </body>
+</html>

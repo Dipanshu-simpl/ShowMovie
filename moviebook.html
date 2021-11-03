@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+<script>
+function proceed()
+{
+alert("Booking successful!!!");
+self.location.href="thanks.html";
+}
+    </script>
+<script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+    <title>Movie Seat Booking</title>
+<!-- Latest compiled and minified CSS -->
+
+
+  </head>
+  <body>
+<h2> Welcome to booking counter</h2>
+    <div class="movie-container">
+      <label for="movie">Pick a movie:</label>
+      <select name="movie" id="movie">
+        <option value="100">ABC (INR 100)</option>
+        <option value="120">DEF (INR 120)</option>
+        <option value="150">GFH (INR 150)</option>
+        <option value="90" >XYZ  (INR 90)</option>
+      </select>
+    </div>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+
+      <div class="row">
+       
+        &nbsp<div>A</div>&nbsp&nbsp&nbsp
+        <div>B</div>&nbsp&nbsp&nbsp&nbsp&nbsp
+        <div>C</div>&nbsp&nbsp&nbsp
+        <div>D</div>&nbsp&nbsp&nbsp
+        <div>E</div>&nbsp&nbsp&nbsp
+        <div>F</div>&nbsp&nbsp&nbsp&nbsp&nbsp
+        <div>G</div>&nbsp&nbsp&nbsp
+        <div>H</div>
+      </div>
+      
+      <div class="row">
+       
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      
+      <div class="row">
+       <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+             <div class="seat"></div>
+             <div class="seat"></div>
+             <div class="seat"></div>
+             <div class="seat occupied"></div>
+             <div class="seat occupied"></div>
+             <div class="seat occupied"></div>
+             <div class="seat"></div>
+      </div>
+    </div>
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of INR <span
+        id="total"
+        >0</span>
+    </p>
+<input type="button" value="Make Payment" onclick="proceed()" class="button"/>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
